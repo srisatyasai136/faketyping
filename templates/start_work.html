@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="work-container">
+
+    <!-- LEFT: Paragraph (non-copyable) -->
+    <div class="work-left">
+        <p id="para">
+            {{ paragraph.text }}
+        </p>
+    </div>
+
+    <!-- RIGHT: Input -->
+    <div class="work-right">
+        <h4>Enter Text here :</h4>
+
+        <textarea id="typingArea" rows="20"></textarea>
+
+        <button onclick="submitText()">Submit</button>
+    </div>
+
+</div>
+
+<script src="{% static 'js/work.js' %}"></script>
+
+{% endblock %}

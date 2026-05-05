@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="profile-container">
+    <div class="profile-card">
+        
+        <h2 class="profile-name">{{ user.name }}</h2>
+        <p class="profile-role">Paragraph User</p>
+
+        <hr>
+
+        <div class="profile-row">
+            <span>User Id</span>
+            <a href="#">{{ user.empid }}</a>
+        </div>
+
+        <div class="profile-row">
+            <span>User Email</span>
+            <a href="#">{{ user.email }}</a>
+        </div>
+
+        <div class="profile-row">
+            <span>Mobile Number</span>
+            <a href="#">{{ user.phno }}</a>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static  'css/login.css' %}">
+</head>
+<body>
+    <!-- From Uiverse.io by Yaya12085 --> 
+<div class="form-container">
+	<p class="title">Have an account?</p>
+	<form class="form" method="post">
+        {% csrf_token %}
+		<div class="input-group">
+			<label for="username">Email</label>
+			<input type="text" name="email" id="username" placeholder="Email">
+		</div>
+		<div class="input-group">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="password">
+		</div>
+        <br><br>
+		<button class="sign">Sign in</button>
+	</form>
+    
+</div>
+</body>
+</html>

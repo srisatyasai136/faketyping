@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="header">
+    <h2>Dashboard</h2>
+</div>
+
+<div class="cards">
+    <a href="{% url 'profile' %}">
+    <div class="card blue">
+        <h3>2</h3>
+        <p>Profile</p>
+        <div class="footer">More info →</div>
+    </div>
+</a>
+<a href="{% url 'change_password' %}">
+    <div class="card green">
+        <h3>53%</h3>
+        <p>Change Password</p>
+        <div class="footer">More info →</div>
+    </div>
+</a>
+<a href="{% url 'start_work' %}">
+    <div class="card yellow">
+        <h3>44</h3>
+        <p>Start Work</p>
+        <div class="footer">More info →</div>
+    </div>
+    </a>
+<a href="{% url 'logout' %}">
+    <div class="card red">
+        <h3>1</h3>
+        <p>Logout</p>
+        <div class="footer">More info →</div>
+    </div>
+    </a>
+</div>
+{% endblock %}
